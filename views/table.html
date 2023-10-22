@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halaman Table</title>
+  <link rel="stylesheet" href="../css/table.css">
+
+  <!--Bootstrap Link for Contrainer and make the navbar responsive-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="https">
+            <img src="../res/Logo_ITERA.png" alt="Logo" width="45" class="d-inline-block align-text-center">
+                [UTS] - Pemrograman Web
+          </a>
+
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./form.html">Form</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./table.html">Table</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <div class="container" style="overflow: auto;">
+      <h2>Tabel Data Registrasi</h2>
+      <p>Berikut adalah <code>data mahasiswa</code> yang telah melakukan registrasi.</p>
+        <table id="table-data" class="table-control">
+          <thead>
+            <tr>
+              <th>Nama</th>
+              <th>NIM</th>
+              <th>Program Studi</th>
+              <th>E-Mail</th>
+              <th>Password</th>
+              <th>Jenis Kelamin</th>
+              <th>Tanggal Lahir</th>
+              <th>Alamat</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sebastian Vettel</td>
+              <td>121140068</td>
+              <td>Teknik Mesin</td>
+              <td>vettel.121140099@itera.ac.id</td>
+              <td>123456678</td>
+              <td>Laki-Laki</td>
+              <td>3 Juli 1987</td>
+              <td>Kota Ngawi, Jawa Timur</td>
+            </tr>
+            <tr>
+              <td>Budi Dharmawan</td>
+              <td>121140099</td>
+              <td>Teknik Fisika</td>
+              <td>budi.121140099@itera.ac.id</td>
+              <td>over134141</td>
+              <td>Laki-Laki</td>
+              <td>3 Juli 1987</td>
+              <td>Kota Ngawi, Jawa Timur</td>
+            </tr>
+            <tr>
+              <td>Lewis Hamilton</td>
+              <td>121140076</td>
+              <td>Teknik Mesin</td>
+              <td>lewis.121140076@itera.ac.id</td>
+              <td>lewis1234</td>
+              <td>Laki-Laki</td>
+              <td>3 Juli 1987</td>
+              <td>Kota Ngawi, Jawa Timur</td>
+            </tr>
+            <tr>
+              <td>Arsyadana Estu Vettel</td>
+              <td>121140068</td>
+              <td>Teknik Informatika</td>
+              <td>arsyadana.121140068@itera.ac.id</td>
+              <td>arsyadestu</td>
+              <td>Laki-Laki</td>
+              <td>17 oktober 2003</td>
+              <td>Kota Ngawi, Jawa Timur</td>
+            </tr>
+            <tr>
+              <td>Alvin Yoga Kesuma</td>
+              <td>121140082</td>
+              <td>Teknik Informatika</td>
+              <td>alvin.121140082@itera.ac.id</td>
+              <td>alvinyoga24</td>
+              <td>Laki-Laki</td>
+              <td>8 oktober 2003</td>
+              <td>Kota Ngawi, Jawa Timur</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+    
+    <footer>
+      Arsyadana Estu Aziz @ 2023
+    </footer>
+
+    <script src="../js/table.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
+
+  

@@ -4,134 +4,105 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Website</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/index.css" />
+
+    <!--Bootstrap Link for Contrainer and make the navbar responsive-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   </head>
 
   <body>
-    <nav>
-      <div class="author">
-        <img
-          src="sad_charles.jpg"
-          alt="Fans ferrari paling tabah"
-          style="
-            height: 150px;
-            width: 150px;
-            margin: 15px;
-            border-radius: 50%;
-            object-fit: cover;
-          "
-        />
-        <div class="profile">
-          <h3>Arsyadana "Archisei" Estu Aziz</h3>
-          <p>Qui est I'imposteur Charles Leclerc 41:07</p>
+      <nav class="navbar navbar-expand-sm bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="https">
+            <img src="res/Logo_ITERA.png" alt="Logo" width="45" class="d-inline-block align-text-center">
+                [UTS] - Pemrograman Web
+          </a>
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="views/form.html">Form</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="views/table.html">Table</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container-fluid">
+        <div class="row">
+          <header class="author">
+            <img
+              src="res/sad_charles.jpg"
+              alt="Fans ferrari paling tabah"
+              style="
+                height: 150px;
+                width: 150px;
+                margin: 15px;
+                border-radius: 50%;
+                object-fit: cover;
+              "
+            />
+            <div class="profile">
+              <h3>Arsyadana Estu Aziz</h3>
+              <p>Qui est I'imposteur Charles Leclerc 41:07</p>
+            </div>
+          </header>
+        </div>
+
+        <div class="row">
+          <div class="about">
+            <div class="desc">
+              <h2>About Me</h2>
+              <p>
+                Hai, saya <code>Arsyadana Estu Aziz</code>. Saya seorang mahasiswa <code>Teknik Informatika</code> dari <code>Institut Teknologi Sumatera</code>. 
+                Saya memiliki antusiasme tinggi terhadap dunia <code>Software Engineering</code>, dan selama kuliah, 
+                saya terlibat dalam kegiatan <code>Himpunan Mahasiswa Teknik Informatika ITERA (HMIF)</code>. Saya berharap dapat memanfaatkan pengetahuan 
+                dan keterampilan saya untuk berkembang lebih jauh.
+              </p>
+            </div>
+            <div class="video-container">
+              <!-- Replace the video URL with your own -->
+              <iframe
+                width="400px"
+                height="250px"
+                src="https://www.youtube.com/embed/j5a0jTc9S10?si=482IFle8DVy9qPwX"
+                title="YouTube video player"
+                frameborder="0"
+                allowfullscreen
+                allow="autoplay"
+              ></iframe>
+              <p style="margin: 0 auto;"><code>Video anjing lucu</code></p>
+            </div>
         </div>
       </div>
-      <div class="link">
-        <ul>
-          <li><a href="https://itera.ac.id">Kampus saya</a></li>
-          <li><a href="https://if.itera.ac.id">Prodi saya</a></li>
-          <li><a href="https://github.com/xenoare">Github saya</a></li>
-        </ul>
-      </div>
-    </nav>
+    
+    <div class="container-divider"></div>
 
-    <div class="container">
-      <div class="about">
-        <div class="desc">
-          <h2>About Me</h2>
-          <p>
-            Halo semuanya, nama saya <code>Arsyadana Estu Aziz</code> (seorang
-            mahasiswa teknik informatika semester 5). Oke sip gitu aja... Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Ipsa consequatur
-            fuga sint placeat, excepturi quibusdam exercitationem. Quam quaerat
-            repudiandae rem. Qui accusantium quod at sint, consequatur molestias
-            laborum id incidunt?
-          </p>
-        </div>
-
-        <div class="video-container">
-          <!-- Replace the video URL with your own -->
-          <iframe
-            width="300px"
-            height="200px"
-            src="https://www.youtube.com/embed/j5a0jTc9S10?si=482IFle8DVy9qPwX"
-            title="YouTube video player"
-            frameborder="0"
-            allowfullscreen
-            allow="autoplay"
-          ></iframe>
-          <p style="margin: 0 auto;"><code>Video anjing lucu</code></p>
-        </div>
-      </div>
-
-      <div class="experiance" style="overflow-x: auto;">
-        <h2>Pengalaman Kerja</h2>
-        <table>
-          <tr>
-            <th rowspan="2">No</th>
-            <th rowspan="2">Posisi</th>
-            <th rowspan="2">Perusahaan</th>
-            <th colspan="2">Waktu</th>
-          </tr>
-          <tr>
-            <th>Mulai</th>
-            <th>Selesai</th>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>Cosplay Ryan Gosling</td>
-            <td>PT Mencari Cinta Sejati</td>
-            <td>Sejak Lahir</td>
-            <td>Maut Memisahkan</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>World Racist Driver</td>
-            <td>Racist Motorsport</td>
-            <td>Setelah Menonton Grand Turismo</td>
-            <td>Crash</td>
-          </tr>
-        </table>
-      </div>
-
-      <div class="project">
-        <h2>Project Saya</h2>
-        <div class="stuff">
-          <div class="box">1</div>
-          <div class="box">2</div>
-          <div class="box">3</div>
-        </div>
-      </div>
-
+    <div class="container-fluid">
       <div class="contact">
-        <h2>Hubungi saya</h2>
-        <form>
-          <div>
-            <p>email: <input type="text" name="email" /></p>
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+          <div class="row">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
           </div>
-          <div>
-            <p>Sudah ngopi?</p>
-            <input type="radio" value="dah" />
-            <label for="dah">dah</label> <br />
-            <input type="radio" value="lum" />
-            <label for="lum">lum</label>
+          <div class="row">
+            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
           </div>
-          <div>
-            <h3>Ngeteh?</h3>
-            <input type="checkbox" value="mau" />
-            <label for="mau">Mau</label> <br />
-            <input type="checkbox" value="ga dulu" />
-            <label for="ga dulu">Ga dulu</label> <br />
-            <input type="checkbox" value="skip" />
-            <label for="skip">Skip</label> <br />
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary">Submit</button>
           </div>
-          <button type="submit" value="Submit">Kirim</button>
         </form>
       </div>
     </div>
-
+     
     <footer>
-      Footer Here
+      Arsyadana Estu Aziz @ 2023
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>

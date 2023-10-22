@@ -36,8 +36,8 @@
   font-size: 15px;
 }
 
-.container {
-  max-width: 800px;
+.container-divider {
+  max-width: 100%;
   margin: 0 auto;
   padding: 20px;
   background-color: #f2f2f2;
@@ -63,37 +63,6 @@
   text-align: center;
 }
 
-.experiance {
-  margin-top: 30px;
-  background-color: #fff;
-  padding: 15px;
-}
-
-.experiance h2 {
-  padding-bottom: 20px;
-}
-
-.experiance th,
-td {
-  text-align: center;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-th,
-td {
-  border: 1px solid #ccc;
-  padding: 8px;
-  text-align: left;
-}
-
-th {
-  background-color: #f2f2f2;
-}
-
 .project {
   margin-top: 30px;
   background-color: #fff;
@@ -112,13 +81,8 @@ th {
 }
 
 .contact {
-  margin-top: 30px;
   background-color: #fff;
   padding: 15px;
-}
-
-.contact h2 {
-  margin-bottom: 20px;
 }
 
 .contact div {
@@ -132,13 +96,12 @@ th {
 .contact button {
   width: 80px;
   height: 50px;
-  background-color: aquamarine;
   border: none;
 }
 
 footer {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 100%;
   padding: 20px;
   background-color: #000;
   color: #fff;
