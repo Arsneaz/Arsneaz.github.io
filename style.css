@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.author {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #333;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: #fff;
+}
+
+.link {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  place-content: end;
+}
+
+.link ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px;
+}
+
+.link ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.about {
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.about h2 {
+  padding-bottom: 10px;
+}
+
+.desc {
+  padding: 15px;
+  text-align: justify;
+}
+
+.video-container {
+  margin: 0 auto;
+  padding: 15px;
+  text-align: center;
+}
+
+.experiance {
+  margin-top: 30px;
+  background-color: #fff;
+  padding: 15px;
+}
+
+.experiance h2 {
+  padding-bottom: 20px;
+}
+
+.experiance th,
+td {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.project {
+  margin-top: 30px;
+  background-color: #fff;
+  padding: 15px;
+}
+
+.stuff {
+  display: flex;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: aquamarine;
+  margin: 0 auto;
+}
+
+.contact {
+  margin-top: 30px;
+  background-color: #fff;
+  padding: 15px;
+}
+
+.contact h2 {
+  margin-bottom: 20px;
+}
+
+.contact div {
+  padding: 10px;
+}
+
+.contact input {
+  margin: 5px;
+}
+
+.contact button {
+  width: 80px;
+  height: 50px;
+  background-color: aquamarine;
+  border: none;
+}
+
+footer {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+@media only screen and (max-width: 425px) {
+  .author {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .link ul li {
+    display: flex;
+    align-items: start;
+    list-style: none;
+    gap: 20px;
+  }
+
+  iframe {
+    width: 150px;
+    height: 100px;
+  }
+
+  .stuff {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
